@@ -20,7 +20,7 @@ public class FileManager {
         this.fileName = fileName;
     }
 
-    public boolean createFile() {
+    public boolean createFileObject() {
         try {
             File newFile = new File(this.fileName);
             this.setFile(newFile);
