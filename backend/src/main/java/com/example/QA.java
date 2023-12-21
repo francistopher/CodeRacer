@@ -22,7 +22,7 @@ public class QA {
     public Map<String, Object> newHomePage() {
         Map<String, Object> model = new HashMap<>();
         model.put("id", UUID.randomUUID().toString());
-        model.put("content", "QA Backend");
+        model.put("content", "Backend Request");
         return model;
     }
 

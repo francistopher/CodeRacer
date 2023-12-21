@@ -12,16 +12,14 @@ import {HttpClient} from '@angular/common/http';
   styleUrl: './app.component.sass'
 })
 
-
   export class AppComponent implements OnInit {
-    title: string = "Angular";
+    title: string = "QA";
     responseData: any = {};
   
     constructor(private http: HttpClient) {}
 
     ngOnInit(): void {
       this.http.get('http://localhost:8080/resource').subscribe(data => {
-        console.log(data)
         this.responseData = data;
       })  
     }
